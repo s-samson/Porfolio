@@ -1,0 +1,13 @@
+[1015/142845.721:ERROR:crash_report_database_win.cc(457)] unexpected header
+[1015/223434.289:ERROR:crash_report_database_win.cc(457)] unexpected header
+[1015/224434.290:ERROR:crash_report_database_win.cc(457)] unexpected header
+[1015/224434.290:ERROR:directory_reader_win.cc(43)] FindFirstFile: Het systeem kan het opgegeven pad niet vinden. (0x3)
+[1015/224434.290:ERROR:crash_report_database_win.cc(457)] unexpected header
+[1015/224434.290:ERROR:crash_report_database_win.cc(457)] unexpected header
+[1015/224934.290:ERROR:crash_report_database_win.cc(457)] unexpected header
+[1015/230434.290:ERROR:crash_report_database_win.cc(457)] unexpected header
+[1015/231934.291:ERROR:crash_report_database_win.cc(457)] unexpected header
+[1102/132706.618:ERROR:crash_report_database_win.cc(457)] unexpected header
+[0107/104028.248:ERROR:directory_reader_win.cc(43)] FindFirstFile: Het systeem kan het opgegeven pad niet vinden. (0x3)
+[0114/124403.934:ERROR:directory_reader_win.cc(43)] FindFirstFile: Het systeem kan het opgegeven pad niet vinden. (0x3)
+[0114/125457.437:ERROR:directory_reader_win.cc(43)] FindFirstFile: Het systeem kan het opgegeven pad niet vinden. (0x3)
