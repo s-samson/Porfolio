@@ -1,0 +1,233 @@
+.flex-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .flex-item{
+    margin: 10px;
+    padding: 10px;
+    font-size: 40px;
+    color: black;
+    align-items: center;
+  }
+  
+  h2 {
+  text-align: center;
+   color: black
+  }
+    
+  body {
+    background-image: url(img/berg.jpg);
+    background-size:cover;
+    background-attachment:fixed;
+  }
+    
+  h3 {
+    text-align: center;
+    color: black;
+  }
+    
+  .column {
+    float: left;
+    width: 50%;
+  }
+    
+  .container{
+    width: 90%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 20px;
+  }
+    
+  .box{
+    height: 200px;
+    width: 200px;
+    color: #353434;
+    position: relative;
+    align-items: center;
+  }
+    
+  h1 {
+    text-align: center;
+    color: black
+  }
+    
+  h4 {
+    color: black;
+  }
+  p {
+    color: rgb(0, 0, 0);
+    font-size: large;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  footer{
+    position: fixed;
+    opacity:0.8;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: #111;
+    height: auto;
+    width: 100%;
+    font-family: "open sans";
+    padding-top: 0px;
+    color: #fff;
+  }
+  .footer-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+  }
+  .footer-content h3{
+    color: #fff;
+    font-size: 1.8rem;
+    font-weight: 400;
+    text-transform:capitalize;
+    line-height: 3rem;
+  }
+  .footer-content p{
+    color: #fff;
+    max-width: 500px;
+    margin: 10px auto;
+    line-height: 28px;
+    font-size:  14px;
+  }
+  .socials{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    margin: 1rem;
+  }
+  .socials li{
+    margin: 0 10px
+  }
+  .socials a{
+    text-decoration: none;
+    color: white;
+  }
+  .socials a i{
+    font-size: 1.5rem;
+    transition: color .4s ease;
+  }
+  .socials a:hover{
+    color: aqua;
+  }
+  .flex-item a{
+    color: black;
+  }
+  .flex-item a:hover{
+    color: white;
+  }
+  .nav-link{
+   color: black;
+   font-size: 1.5rem;
+  }
+  .nav-link:hover{
+    color: aqua;
+  }
+  .flex-item a{
+    color: black;
+  }
+  .flex-item a:hover{
+    color: white;
+  }
+  .kennis-content h2{
+    text-align: left;
+    color: black
+  }
+  .kennis-content li {
+    font-size: large;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  img{
+    border: 4px solid black
+  
+  }
+  .column {
+    float: left;
+    padding: 5px;
+    width: 50%;
+  }
+  .row::after {
+    content:"";
+    display: table;
+    clear: both;
+  }
+  
+ 
+  
+ 
+  
+  
+
+
+  .row-card {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-flow: wrap;
+}
+  
+  .card {
+    width: 20%;
+    background: #fff;
+    border: 1px solid #ccc;
+    margin-bottom: 50px;
+    transition: 0.3s;
+}
+  
+  .card-header {
+    text-align: center;
+    padding: 50px 10px;
+    background: linear-gradient(to right, #ff416c, #ff4b2b);
+    color: #fff;
+}
+  
+  .card-body {
+    padding: 20px 10px;
+    text-align: center;
+    font-size: 18px;
+}
+  
+  .card-body .btn {
+    display: block;
+    color: #fff;
+    text-align: center;
+    background: linear-gradient(to right, #ff416c, #ff4b2b);
+    margin-top: 20px;
+    text-decoration: none;
+    padding: 10px 5px;
+}
+  
+  .card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 40px -10px rgba(0, 0, 0, 0.25);
+}
+  
+  @media screen and (max-width: 1000px) {
+    .card {
+      width: 40%;
+    }
+}
+  
+  @media screen and (max-width: 620px) {
+    .container {
+      width: 100%;
+}
+  
+    .heading {
+      padding: 20px;
+      font-size: 20px;
+}
+  
+    .card {
+      width: 80%;
+    }
+}
+  
