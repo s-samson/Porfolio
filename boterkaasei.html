@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Objects and classes in JavaScript</title>
+  <meta charset="utf-8">
+  <link rel="STYLESHEET" href="boterkaasei.css" type="text/css">
+</head>
+<body>
+    <div class="page-title">
+        <h1 class="title-text">
+            Objects and classes in JavaScript
+        </h1>
+        <h2>
+            ✌️ It takes two to Tic Tac Toe! ✌️
+        </h2>
+    </div>
+    <div class="players-container">
+            <div class="game-container">
+                <div class="row">
+                    <div class="column add-players">
+                        <div class="row">
+                            Create a new player:
+                            <br>
+                            <input name="player-name" type="text" class="input-field input-field-player-name" placeholder="name">
+                        </div>
+                        <button type="button" class="button add-player-button">Add player</button>
+                        <div class="row">
+                            <p>
+                            <button type="button" class="button reset-game-button">Reset game</button>
+                            </p>
+                        </div>
+                    </div>
+                <row>
+                    <div class="column">
+                        <div class="player-info-container">
+                            <div class="player-one-label">
+                                Player One
+                            </div>
+                            <!-- Score wordt automatisch berekend.-->
+                            <!-- <div>
+                                <button type="button" class="add-points-button add-points-player1-button">⬆️</button>
+                            </div> -->
+                        </div>
+                    </div>
+                    <div class="column">
+                        <div class="player-info-container">
+                            <div class="player-two-label">
+                                Player Two
+                            </div>
+                            <!-- Score wordt automatisch berekend.-->
+                            <!-- <div>
+                                <button type="button" class="add-points-button add-points-player2-button">⬆️</button>
+                            </div> -->
+                        </div>
+                    </div>
+                    <row>
+                        <div class="tic-tac-toe-board">
+                            <div data-cell-index="0" class="box"></div>
+                            <div data-cell-index="1" class="box"></div>
+                            <div data-cell-index="2" class="box"></div>
+                            <div data-cell-index="3" class="box"></div>
+                            <div data-cell-index="4" class="box"></div>
+                            <div data-cell-index="5" class="box"></div>
+                            <div data-cell-index="6" class="box"></div>
+                            <div data-cell-index="7" class="box"></div>
+                            <div data-cell-index="8" class="box"></div>
+                          </div>
+                    </row>
+                </row>
+                <h2 id="game--status"></h2>          
+            </div>
+        </div>
+    </div>
+    <script src="Boterkaasei.js"></script>
+</body>
+</html>
