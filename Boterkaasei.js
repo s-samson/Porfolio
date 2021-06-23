@@ -171,14 +171,14 @@ class Player {
 // Game mechanics
 const statusDisplay = document.getElementById('game--status');
 
-
+// dit zijn de messages die komen na elke pot of na elke ronde
 const winningMessage = () => `Player ${currentPlayer} has won!`;
 const drawMessage = () => `Game ended in a draw!`;
 const currentPlayerTurn = () => `It's ${currentPlayer}'s turn`;
 
 statusDisplay.innerHTML = currentPlayerTurn();
 
-
+// hier checkt hij of er 2 spelers aanwezig zijn. anders start het spel niet.
 function handleCellClick(clickedCellEvent) {
     if(players.length < 2){
         alert("Er zijn nog niet genoeg spelers");
@@ -200,12 +200,13 @@ function handleCellClick(clickedCellEvent) {
     handleCellPlayed(clickedCell, clickedCellIndex);
     handleResultValidation();
 }
-
+// met deze functie update ik me Innerlijke game state en hij update de UI.
 function handleCellPlayed(clickedCell, clickedCellIndex) {
     gameState[clickedCellIndex] = currentPlayer;
     clickedCell.innerHTML = currentPlayer;
 }
 
+// In mijn loop ga ik door elke cell heen, en check ik of de elementen gelijk staan aan mijn condities. als ze gelijk zijn dan wint de speler.
 function handleResultValidation() {
     let roundWon = false;
     for (let i = 0; i <= 7; i++) {
@@ -253,6 +254,7 @@ function handleResultValidation() {
     handlePlayerChange();
 }
 
+// hier wipet hij het bordt na 1 spel. zodat er meerde potjes gespeeld kunnen worden
 function wipeBoard(message){
     gameState = ["", "", "", "", "", "", "", "", ""];
     alert(message);
@@ -260,6 +262,7 @@ function wipeBoard(message){
     .forEach(cell => cell.innerHTML = "");
 }
 
+// dit zijn de winningconditions in het veld. 
 const winningConditions = [
     [0, 1, 2],
     [3, 4, 5],
@@ -270,17 +273,17 @@ const winningConditions = [
     [0, 4, 8],
     [2, 4, 6]
 ];
-
+// hier maak ik gebruikt van de (ternary operator) het is kort gezegd een shortcut voor een if statement.
 function handlePlayerChange() {
     currentPlayer = currentPlayer === "X" ? "O" : "X";
     statusDisplay.innerHTML = currentPlayerTurn();
 }
 
+// hier zet hij alle waardes naar de begin waarde van het spel. en begint hij een heel nieuw spel
 function handleRestartGame() {
     gameActive = true;
     currentPlayer = "X";
     gameState = ["", "", "", "", "", "", "", "", ""];
-    //statusDisplay.innerHTML = currentPlayerTurn();
     document.querySelectorAll('.box')
     .forEach(cell => cell.innerHTML = "");
 }
