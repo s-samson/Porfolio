@@ -1,0 +1,68 @@
+body {
+    box-sizing: border-box;
+    margin: 0;
+    background: linear-gradient(#78dcee, #e66465);
+    font-family: sans-serif;
+    
+}
+
+
+.jumbotron{
+    background-image: url(../img/yoink.jpg);
+    background-size: cover;
+    border-bottom: 2px solid rgb(0, 0, 0);
+    padding-bottom: 2%;
+    padding-top: 2%;
+    text-align: center; 
+}
+
+li, a, button {
+    color: white; 
+    font-size: 20px;
+}
+
+.logo {
+    cursor: pointer;
+    text-align: left;
+}
+
+.NavLinks li{
+    display: inline-block;
+    padding: 0px 10px;
+}
+
+.NavLinks li a:hover {
+    color:rgba(169, 0, 65, 0.8);
+}
+
+button {
+    padding: 10px 25px;
+    background-color:rgba(169, 0, 65, 1);
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: rgb(169, 0, 65,0.8);
+}
+
+
+
+.column {
+    float: left;
+    width: 25%;
+    padding: 5%;
+    display: flex;
+    justify-content: center;  
+     
+}
+.row{
+    justify-content: center;
+    align-items: center;
+}
+
+.responsive {
+    width: 80%;
+    height: auto;
+}

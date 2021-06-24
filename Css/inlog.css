@@ -1,0 +1,18 @@
+input[type=text], input[type=password] {   
+    width: 30%;   
+    margin: auto;  
+    padding: 10px 10px;   
+    display: inline-block;   
+    border: 2px solid rgb(97, 0, 24);   
+    box-sizing: border-box;
+}
+
+.container-inlog-page {           
+    border-radius: 15px;
+    background: #212121;
+    padding: 10px;
+    opacity: 1;
+    margin: auto;
+    width: 50%;
+    color: white;
+}  
