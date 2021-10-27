@@ -1,3 +1,8 @@
+<?php
+    include_once 'C:/xampp/htdocs/portfolio/dbh.inc.php';
+    include_once 'Classes/DbClientRepository.php';
+?>
+
 <html lang="en">
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -23,23 +28,31 @@
             </div>
         </div>
     </div>
+    <?php
+    $db = new DbClientRepository(new PDO("mysql:host=localhost;dbname=portfolio","root", ""));
+    $clients = $db->findAll();
 
-
-    <div class="gegevens">
-        <div class='grid'>
-            <span> <strong> Naam: </strong></span>
-            <span class="editable-span">Jean Pierre</span>
-            <span> <strong> Geboorte jaar:</strong>  </span>
-            <span class="editable-span"> 2004 </span>
-            <span><strong>Zorg Zwaarte Pakket:</strong></span>
-            <span class="editable-span"> Niveau 4 / Licht verstandelijk beperkt: </span>
-            <span><strong>Telefoon Client:</strong></span>
-            <span class="editable-span">0634659287</span>
-            <span><strong>Telefoon Ouders/Verzorgers:</strong></span>
-            <span class="editable-span"> 0632659876 / Bogdann@gmail.com </span>
+    ?>
+    <?php foreach ($clients as $client):?>
+        <div class="gegevens">
+            <div class='grid'>
+                <span> <strong> Naam: </strong></span>
+                <span class="editable-span"><?= $client["naam"] ?></span>
+                <span> <strong> Geboorte jaar:</strong>  </span>
+                <span class="editable-span"> <?= $client["geboortejaar"]  ?> </span>
+                <span><strong>Zorg Zwaarte Pakket:</strong></span>
+                <span class="editable-span"> <?= $client["ZZP_ID"] ?> </span>
+                <span><strong>Telefoon Client:</strong></span>
+                <span class="editable-span"><?= $client["Telnummer_Client"] ?></span>
+                <span><strong>Telefoon Ouders/Verzorgers:</strong></span>
+                <span class="editable-span"> <?= $client["Telnummer_OV"] ?></span>
+                <span><strong>email:</strong></span>
+                <span class="editable-span"> <?= $client["Email_OV"] ?></span>
             </div>
 
-    </div>
+        </div>
+    <?php endforeach;?>
+
 
 
     <script src="JS/gegevens.js"></script>
