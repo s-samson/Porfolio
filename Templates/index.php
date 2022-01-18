@@ -6,11 +6,17 @@
   <meta charset="utf-8"> 
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"> <!-- Bootstrap CSS --> 
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous"> 
+  <link rel="stylesheet" href="../Public/style.css">
+<style>
+</style>  
+  
   <meta charset="utf-8">
+
   <title>Portfolio Sam</title>
   <meta name="description" content="Dit is mijn leven">
   <meta name="author" content="Sam Samson">
-  <link rel="stylesheet" href="./mystyle.css">
+
+
 </head>
 <div class="container">
 <div class="jumbrotron">
@@ -25,13 +31,13 @@
     <div class="navbar-collapse collapse w-100 justify-content-center" id="navbar5">
         <ul class="navbar-nav mx-auto">
             <li class="nav-item">
-                <a class="nav-link" href="./index.html">Home</a>
+                <a class="nav-link" href="../Public/index.html">Home</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="./Kennis.html">Over mij</a>
+                <a class="nav-link" href="Kennis.html">Over mij</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="./Projecten.html">Projecten</a>
+                <a class="nav-link" href="index.php">Projecten</a>
             </li>
         </ul>
     </div>
@@ -39,39 +45,82 @@
   </nav>
 </header>
 
-
-<div class="container">
-  <div class="row">
-    <div class="col-md-8">
-      <h1>Over mij.</h1>
-      <p>Sinds jonge leeftijd heb ik altijd grote interesse gehad in computers.
-        Deze interesse varieerde van het spelen van games tot inhoudelijk wat maakt een pc een pc.
-        En hoe zit die webpagina nou precies in elkaar?<br>
-        Ik ben een gedreven harde werker, kan zowel zelfstandig als in een team werken.
-        Samen opzoek gaan naar een oplossing, of alleen werken dat vind ik ook fijn.
-        En ik kan mij goed focussen op de opdracht die voor mij staat. <br>
-        Ik ben een jonge man die logisch kan nadenken en dat implementeer ik in mijn werkveld. 
-        Ik pas mij makkelijk aan de omgeving aan en ben sociaal, <br> ik ben klantgericht ingesteld.
-        Leergierig, kritisch en creatief, denk in oplossingen en draag mijn verantwoordelijkheid.
-        Ik durf mijn mening te geven zeg eerlijk wat ik van iets vind. en ik vind transparantie belangrijk.
-      
-      </p>
+<div class="container-card">
+  <div class="heading">
+    <h1>Projecten jaar 1</h1>
+  </div>
+  <div class="row-card">
+    <div class="card">
+      <div class="card-header">
+        <h1>blackjack</h1>
+      </div>
+      <div class="card-body">
+        <p>
+          hier heb ik een blackjack applicatie gemaakt in de taal c#
+        </p>
+        <a href="projectc.html" class="btn">link</a>
+      </div>
     </div>
-    <div class="col-md-4">
-      <img src= "img/sneeuw1.jfif" alt="dit ben ik" width="300" height="auto">
+    <div class="card">
+      <div class="card-header">
+        <h1>calculator</h1>
+      </div>
+      <div class="card-body">
+        <p>
+          Hier heb ik een calcualtor gemaakt in de taal javascript
+        </p>
+        <a href="projectjs.html" class="btn">link</a>
+      </div>
     </div>
-      <div class="col-md-12 kennis-content">
-        <h2>Mijn kennis</h2>
-        <ul>
-          <li>Junior Developer c#</li>
-          <li>Junior Developer HTML</li>
-          <li>Junior Developer Bootstrap</li>
-          <li>Junior Developer CSS</li>
-        </ul>
+    <div class="card">
+      <div class="card-header">
+        <h1>project zuzu</h1>
+      </div>
+      <div class="card-body">
+        <p>
+          Hier heb ik een website gemaakt voor sushi restaurant zuzu
+        </p>
+        <a href="../Sushi/index.php" class="btn">link</a>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-header">
+        <h1>tic tac toe</h1>
+      </div>
+      <div class="card-body">
+        <p>
+          Hier heb ik boter kaas en eieren gemaakt in de taal javascript
+        </p>
+        <a href="boterkaasei.html" class="btn">link</a>
+      </div>
+    </div>
+      <!-- <div  class="card">
+      <div class="card-header">
+        <h1>Dice game</h1>
+      </div>
+      <div class="card-body">
+        <p>
+          Hier heb ik een dice game gemaakt in de taal c#
+        </p>
+        <a href="Dicegame.html" class="btn">link</a>
+      </div>
+    </div> -->
+    <div class="card">
+      <div class="card-header">
+        <h1>Interaction Design</h1>
+      </div>
+      <div class="card-body">
+        <p>
+          Interaction Design project.
+        </p>
+        <a href="Main.html" class="btn">link</a>
+      </div>
     </div>
   </div>
 </div>
-<a href="beroepprofiel.html" class="btn btn-dark btn-lg active" role="button" aria-pressed="true">Beroepsprofiel</a>
+
+
+
 
 
 <footer>
